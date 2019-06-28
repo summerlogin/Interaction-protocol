@@ -96,11 +96,11 @@ json字符串结构
     "channel" : "XXX",
     "encryption" : "open"/"wap/wpa2"
 }
-````
+```
 ---
 ---
 
-#### login
+### login
 ``` json
 {
     "passwd" : "xxxxxx"
@@ -109,7 +109,7 @@ json字符串结构
 #### [jump to general_result](#general_result)
 
 
-#### set_router_mode
+### set_router_mode
 ``` json
 {
     "mode" : "router"/"repeater"
@@ -117,14 +117,14 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_router_mode
+### get_router_mode
 ``` json
 {
     "mode" : "router"/"repeater"
 }
 ```
 
-#### get_router_info
+### get_router_info
 ``` json
 {
     "mode" : "router"/"repeater",
@@ -134,7 +134,7 @@ json字符串结构
 }
 ```
 
-#### set_admin_password
+### set_admin_password
 ``` json
 {
     "original_password" : "XXX",
@@ -143,7 +143,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### router_operation
+### router_operation
 ``` json
 {
     "operation" : "reboot"/"reset"
@@ -151,7 +151,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### set_timer_restart
+### set_timer_restart
 ``` json
 {
     "enabled" : "true"/"false",
@@ -160,7 +160,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_timer_restart_info
+### get_timer_restart_info
 ``` json
 {
     "enabled" : "true"/"flase",
@@ -168,7 +168,7 @@ json字符串结构
 }
 ```
 
-#### get_repeater_wifi_info
+### get_repeater_wifi_info
 ``` json
 {
     "list" : 
@@ -185,7 +185,7 @@ json字符串结构
 }
 ```
 
-#### set_repeater
+### set_repeater
 ``` json
 {
     "ssid" : "XXX",
@@ -195,7 +195,7 @@ json字符串结构
 #### [jump to general_result](#general_result)
 
 
-#### get_wan_status
+### get_wan_status
 ``` json
 {
     "result" : "ulink"/"link"/"unconnect"/"connect",//(插上网线/未插网线/能够上网/不能够上网)
@@ -203,7 +203,7 @@ json字符串结构
 }
 ```
 
-#### get_wan_network
+### get_wan_network
 ``` json
 {
     "network_mode" : "dhcp"/"static"/"pppoe",
@@ -241,7 +241,7 @@ json字符串结构
 }
 ```
 
-#### set_wan_network
+### set_wan_network
 ``` json
 {
     "network_mode" : "dhcp"/"static"/"pppoe",
@@ -271,7 +271,7 @@ json字符串结构
 #### [jump to general_result](#general_result)
 
 
-#### set_lan
+### set_lan
 ``` json
 {
     "ipaddr" : "XXX",
@@ -282,7 +282,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_lan_info
+### get_lan_info
 ``` json
 {
     "mac" : "XXX",
@@ -293,7 +293,7 @@ json字符串结构
 }
 ```
 
-#### set_wifi
+### set_wifi
 {
     "2.4g":
     {
@@ -306,7 +306,7 @@ json字符串结构
 }
 #### [jump to general_result](#general_result)
 
-#### get_wifi_info
+### get_wifi_info
 {
     "2.4g":
     {
@@ -318,7 +318,7 @@ json字符串结构
     }
 }
 
-#### set_wifi_power
+### set_wifi_power
 ``` json
 {
     "2.4g" : 100,
@@ -326,7 +326,7 @@ json字符串结构
 }
 ```
 
-#### set_guest_wifi
+### set_guest_wifi
 {
     "2.4g":
     {
@@ -339,7 +339,7 @@ json字符串结构
 }
 #### [jump to general_result](#general_result)
 
-#### get_guest_wifi_info
+### get_guest_wifi_info
 {
     "2.4g":
     {
@@ -351,7 +351,7 @@ json字符串结构
     }
 }
 
-#### get_device_info
+### get_device_info
 ``` json
 {
     "num" : "XXX",
@@ -387,7 +387,7 @@ json字符串结构
 }
 ```
 
-#### get_mesh_node_info
+### get_mesh_node_info
 ``` json
 {
     "iptv_vlan_num" : "XXX",
@@ -415,7 +415,7 @@ json字符串结构
 }
 ```
 
-#### set_smb
+### set_smb
 ``` json
 {
     "pop-up" : "true"/"false", //可选字段，需要弹出的时候才设置
@@ -432,7 +432,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_smb_info
+### get_smb_info
 ``` json
 {
     "capacity" : 1024, //单位M
@@ -448,7 +448,7 @@ json字符串结构
 }
 ```
 
-#### set_camera_storage
+### set_camera_storage
 ``` json
 {
     "enabled" : "true"/"false"
@@ -456,14 +456,14 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_camera_storage_info
+### get_camera_storage_info
 ``` json
 {
     "enabled" : "true"/"false"
 }
 ```
 
-#### set_clouddisk
+### set_clouddisk
 ``` json
 {
     "enabled" : "true"/"false",
@@ -479,7 +479,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_clouddisk_info
+### get_clouddisk_info
 ``` json
 {
     "enabled" : "true"/"false",
@@ -494,7 +494,7 @@ json字符串结构
 }
 ```
 
-#### set_dlan
+### set_dlan
 ``` json
 {
     "enabled" : "true"/"false"
@@ -502,14 +502,14 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_dlan_info
+### get_dlan_info
 ``` json
 {
     "enabled" : "true"/"false"
 }
 ```
 
-#### add_blacklist_nod
+### add_blacklist_nod
 ``` json
 {
     "mac" : "XXX",
@@ -518,7 +518,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### del_blacklist_nod
+### del_blacklist_nod
 ``` json
 {
     "list" :
@@ -529,7 +529,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### update_blacklist_nod
+### update_blacklist_nod
 ``` json
 {
     "list":
@@ -547,7 +547,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_blacklist_info
+### get_blacklist_info
 ``` json
 {
     "list" :
@@ -564,7 +564,7 @@ json字符串结构
 }
 ```
 
-#### add_rsvd_node
+### add_rsvd_node
 ``` json
 {
     "name" : "XXX",
@@ -574,7 +574,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### del_rsvd_node
+### del_rsvd_node
 ``` json
 {
     "list":
@@ -594,7 +594,7 @@ json字符串结构
 #### [jump to general_result](#general_result)
 
 
-#### update_rsvd_node
+### update_rsvd_node
 ``` json
 {
     "list":
@@ -614,7 +614,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_rsvd_info
+### get_rsvd_info
 ``` json
 {
     "num" : 4,
@@ -629,7 +629,7 @@ json字符串结构
 }
 ```
 
-#### add_portfw_node
+### add_portfw_node
 ``` json
 {
     "ipaddr" : "XXX",
@@ -640,7 +640,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### del_portfw_node
+### del_portfw_node
 ``` json
 {
     "list":
@@ -656,7 +656,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### update_portfw_node
+### update_portfw_node
 ``` json
 {
     "list":
@@ -673,7 +673,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_portfw_info
+### get_portfw_info
 ``` json
 {
     "num" : 10,
@@ -690,7 +690,7 @@ json字符串结构
 }
 ```
 
-#### set_beaforming
+### set_beaforming
 ``` json
 {
     "enabled" : "true"/"flase"
@@ -698,7 +698,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### set_firewall
+### set_firewall
 ``` json
 {
     "icmp_enabled" : "true"/"false",
@@ -708,7 +708,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_firewall_info
+### get_firewall_info
 ``` json
 {
     "icmp_enabled" : "true"/"false",
@@ -717,7 +717,7 @@ json字符串结构
 }
 ```
 
-#### set_net_diagnosis
+### set_net_diagnosis
 ``` json
 {
     "type" : "ping"/"tracert",
@@ -730,7 +730,7 @@ json字符串结构
 }
 ```
 
-#### set_timezone
+### set_timezone
 ``` json
 {
     "timezone" : "XXX",
@@ -739,7 +739,7 @@ json字符串结构
 #### [jump to general_result](#general_result)
 
 
-#### get_timezone
+### get_timezone
 ``` json
 {
     "timezone" : "XXX",
@@ -748,7 +748,7 @@ json字符串结构
 }
 ```
 
-#### set_remote_assist
+### set_remote_assist
 ``` json
 {
     "enable" : "true"/"false"
@@ -756,7 +756,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-#### get_remote_assist
+### get_remote_assist
 ``` json
 {
     "enable" : "true"/"false"
