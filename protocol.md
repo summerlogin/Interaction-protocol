@@ -174,10 +174,12 @@ json字符串结构
     "list" : 
     [
         {
+            "band" : "5g",
             "ssid" : "XXX",
             "rssi" : 20
         },
         {
+            "band" : "2.4g"
             "ssid" : "XXX",
             "rssi" : 20
         }
