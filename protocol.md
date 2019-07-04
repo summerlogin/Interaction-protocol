@@ -144,7 +144,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-### router_operation
+### router_restart_and_reset
 ``` json
 {
     "operation" : "reboot"/"reset"
