@@ -139,7 +139,6 @@ json字符串结构
 {
     "original_password" : "XXX",
     "new_password" : "XXX"，
-    "confirm_new_password" : "xxx"
 }
 ```
 #### [jump to general_result](#general_result)
@@ -195,12 +194,21 @@ json字符串结构
     "passwod" : "XXX"
 }
 ```
+
+### get_wan_status
+``` json
+{
+    "result" : "ulink"/"link"/"unconnect"/"connect",//(插上网线/未插网线/能够上网/不能够上网)
+    "access_time" : 3600 //单位s
+}
+```
+
 #### [jump to general_result](#general_result)
 
 ### get_wan_network
 ``` json
 {
-    "network_mode" : ["dhcp","tatic","pppoe"],
+    "network_mode" : "dhcp"/"static"/"pppoe",
     "speedup" : 1024,
     "speeddown" : 1024,
 
@@ -221,7 +229,6 @@ json字符串结构
     //如果是pppoe
     "username" : "XXX",
     "password" : "XXX",
-    "confirmp" : "XXX"
 
     //如果是dhcp
     "dns":
@@ -239,7 +246,7 @@ json字符串结构
 ### set_wan_network
 ``` json
 {
-     "network_mode" : ["dhcp","tatic","pppoe"],
+     "network_mode" : "dhcp"/"static"/"pppoe",
     "static_info":
     {
         "ipaddr" : "XXX",
@@ -420,7 +427,7 @@ json字符串结构
     {
         "name" : "XXX",
         "passwd" : "XXX",
-        "privilege" : ["r","wr"]    //读/读写
+        "privilege" : "read"/"read|write", //读/读写
         "enabled" : "true"
     }
 }
@@ -437,7 +444,7 @@ json字符串结构
     {
         "name" : "XXX",
         "passwd" : "XXX",
-        "privilege" :[ "read","read|write"],
+        "privilege" :"read"/"read|write", 
         "enabled" : "true"
     }
 }
