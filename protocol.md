@@ -200,7 +200,7 @@ json字符串结构
 ### get_wan_network
 ``` json
 {
-    "network_mode" : "dhcp"/"static"/"pppoe",
+    "network_mode" : ["dhcp","tatic","pppoe"],
     "speedup" : 1024,
     "speeddown" : 1024,
 
@@ -221,6 +221,7 @@ json字符串结构
     //如果是pppoe
     "username" : "XXX",
     "password" : "XXX",
+    "confirmp" : "XXX"
 
     //如果是dhcp
     "dns":
@@ -238,7 +239,7 @@ json字符串结构
 ### set_wan_network
 ``` json
 {
-    "network_mode" : "dhcp"/"static"/"pppoe",
+     "network_mode" : ["dhcp","tatic","pppoe"],
     "static_info":
     {
         "ipaddr" : "XXX",
@@ -419,7 +420,7 @@ json字符串结构
     {
         "name" : "XXX",
         "passwd" : "XXX",
-        "privilege" : "r"/"wr", //读/读写
+        "privilege" : ["r","wr"]    //读/读写
         "enabled" : "true"
     }
 }
@@ -436,7 +437,7 @@ json字符串结构
     {
         "name" : "XXX",
         "passwd" : "XXX",
-        "privilege" : "read"/"read|write",
+        "privilege" :[ "read","read|write"],
         "enabled" : "true"
     }
 }
