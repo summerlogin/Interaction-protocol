@@ -161,7 +161,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-### get_timer_restart_info
+### get_timer_restart_info 
 ``` json
 {
     "enabled" : "true"/"flase",
@@ -196,15 +196,6 @@ json字符串结构
 }
 ```
 #### [jump to general_result](#general_result)
-
-
-### get_wan_status
-``` json
-{
-    "result" : "ulink"/"link"/"unconnect"/"connect",//(插上网线/未插网线/能够上网/不能够上网)
-    "access_time" : 3600 //单位s
-}
-```
 
 ### get_wan_network
 ``` json
