@@ -37,7 +37,7 @@ json字符串结构
 - [router_operation](#router_operation)
 - [set_admin_password](#set_admin_password)
 - [get_repeater_wifi_info](#get_repeater_wifi_info)
-- [set_repeater](#set_repeater_info)
+- [set_repeater](#set_repeater)
 - [get_device_info](#get_device_info)
 - [get_mesh_node_info](#get_mesh_node_info)
 - [get_wan_network](#get_wan_network)
@@ -48,16 +48,16 @@ json字符串结构
 - [get_guest_wifi_info](#get_guest_wifi_info)
 - [set_lan](#set_lan)
 - [get_lan_info](#get_lan_info)
-- [get_smb](#get_smb)
-- [set_smb_info](#set_smb_info)
+- [set_smb](#set_smb)
+- [get_smb_info](#get_smb_info)
 - [get_camera_storage_info](#get_camera_storage_info)
 - [set_camera_storage](#set_camera_storage)
 - [set_clouddisk](#set_clouddisk)
 - [get_clouddisk_info](#get_clouddisk_info)
 - [set_dlan](#set_dlan)
 - [get_dlan_info](#get_dlan_info)
-- [add_blacklist_nod](#add_blacklist_nod)
-- [del_blacklist_nod](#del_blacklist_nod)
+- [add_blacklist_node](#add_blacklist_node)
+- [del_blacklist_node](#del_blacklist_node)
 - [update_blacklist_nod](#update_blacklist_nod)
 - [get_blacklist_info](#get_blacklist_info)
 - [add_rsvd_node](#add_rsvd_node)
@@ -89,7 +89,7 @@ json字符串结构
     //可选字段，没有的话代表不设置
     "enabled" : "true"/"false",
     "mac" : "XXX",
-    "hidden" : "true"/"false"
+    "hidden" : "true"/"false",
     "ssid" : "XXX",
     "mode" : "", //2.4g:bgn   5g://anac
     "passwd" : "XXX",
@@ -427,7 +427,7 @@ json字符串结构
     {
         "name" : "XXX",
         "passwd" : "XXX",
-        "privilege" : "r"/"wr", //读/读写
+        "privilege" : "read"/"read|write", //读/读写
         "enabled" : "true"
     }
 }
