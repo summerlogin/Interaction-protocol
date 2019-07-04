@@ -138,7 +138,8 @@ json字符串结构
 ``` json
 {
     "original_password" : "XXX",
-    "new_password" : "XXX"
+    "new_password" : "XXX"，
+    "confirm_new_password" : "xxx"
 }
 ```
 #### [jump to general_result](#general_result)
