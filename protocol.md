@@ -17,8 +17,7 @@ json字符串结构
 ``` json
 {
     "request" : "XXX",  //可选字段，web界面下发时有效，调用的接口名
-    "code" : "XXX", //可选字段，web界面获取值时有效 错误码
-    "parameter" : ""//可选字段，如果code错误，则改字段无效
+    "parameter" : ""//结果和请求参数都通过该字段下发
 }
 ```
 
@@ -80,7 +79,7 @@ json字符串结构
 
 ### general_result
 ``` json
-"result" : "ture"/"false"
+"code" : "" //错误码
 ```
 
 ### wifi_node_info
