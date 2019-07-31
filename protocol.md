@@ -130,7 +130,7 @@ json字符串结构
     "mode" : "router"/"repeater",
     "duration" : 3600,
     "hardware_version" : "XXX",
-    "firmware version" : "XXX",
+    "firmware_version" : "XXX",
 }
 ```
 
