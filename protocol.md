@@ -93,6 +93,7 @@ json字符串结构
     "hidden" : "true"/"false",
     "ssid" : "XXX",
     "mode" : "", //2.4g:bgn   5g://anac
+    "band_width" : 20/40/80,
     "passwd" : "XXX",
     "channel" : "XXX",
     "encryption" : "open"/"wap/wpa2"
