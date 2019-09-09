@@ -14,6 +14,8 @@ TODO:
 # 前端和路由器交互请求
 - method : json字符串
 - 发送的全是post方法
+- 上传文件时，content type是"multipart/form-data"，会接收文件并返回code和file_id，文件大小当前限定在10M，只能临时存放一个文件，再次上传文件会冲掉上个存放的文件
+- 需要下载文件时，先用具体请求获得服务器响应，服务器准备好下载文件时会返回下载链接，另外启动get请求下载该链接文件，例如：下载配置时，先请求"get_backup_config"命令，服务器会响应返回file_name（即下载URL"cgi-bin/cgi_download"），另外调用get请求下载该链接（"http://192.168.1.1/cgi_download"）
 
 json字符串结构
 ``` json
@@ -25,7 +27,7 @@ json字符串结构
 ```
 
 # i'm hear
-- 升级，配置文件接口还未定
+- 
 
 ---
 ---
@@ -76,6 +78,9 @@ json字符串结构
 - [set_net_diagnosis](#set_net_diagnosis)
 - [set_timezone](#set_timezone)
 - [get_timezone](#get_timezone)
+- [get_backup_config](#get_backup_config)
+- [do_restore_config](#do_restore_config)
+- [do_upgrade](#do_upgrade)
 
 ---
 ---
@@ -94,10 +99,10 @@ json字符串结构
     "hidden" : "true"/"false",
     "ssid" : "XXX",
     "mode" : "", //2.4g:bgn   5g://anac
-    "band_width" : 20/40/80,
+    "band_width" : 20/40/80/2040,
     "passwd" : "XXX",
     "channel" : "XXX",
-    "encryption" : "open"/"wap/wpa2"
+    "encryption" : "open"/"wpa/wpa2"
 }
 ```
 ---
@@ -767,3 +772,30 @@ json字符串结构
     "enable" : "true"/"false"
 }
 ```
+
+### get_backup_config
+``` json
+{
+    "file_name" : "cgi-bin/cgi_download", // 需要另外发起get请求，下载/保存该文件，默认URL: http://192.168.1.1/cgi_download
+    "length" : "xxxxx",					// 待下载的备份配置文件的长度，简单校验下
+}
+```
+#### [jump to general_result](#general_result)
+
+### do_restore_config
+``` json
+{
+    "file_id" : "",				// 在上传配置文件时会返回对应值，预留字段
+    "length" : "xxxxx",					// 上传的配置文件长度，简单校验下
+}
+```
+#### [jump to general_result](#general_result)
+
+### do_upgrade
+``` json
+{
+    "file_id" : "",				// 在上传升级文件时会返回对应值，预留字段
+    "length" : "xxxxx",					// 上传的升级文件长度，简单校验下
+}
+```
+#### [jump to general_result](#general_result)
