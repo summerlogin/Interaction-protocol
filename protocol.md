@@ -74,6 +74,7 @@ json字符串结构
 - [set_net_diagnosis](#set_net_diagnosis)
 - [set_timezone](#set_timezone)
 - [get_timezone](#get_timezone)
+- [get_online](#get_online)
 
 ---
 ---
@@ -762,5 +763,22 @@ json字符串结构
 ``` json
 {
     "enable" : "true"/"false"
+}
+```
+- ### [get_online](#get_online)
+``` json
+{
+	"stas": [{
+		"mac": "",
+	  	"band"：2G/5G
+		"alias": "",
+		"ip": "",
+		"online": "",,
+		"onlinetime": "",,
+		"rtspeeddown": "",,
+		"rtspeedup": "",,
+		"rx_bytes": "",
+		"tx_bytes": ""
+	}]
 }
 ```
