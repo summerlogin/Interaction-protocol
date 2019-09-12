@@ -773,10 +773,10 @@ json字符串结构
 	  	"band"：2G/5G
 		"alias": "",
 		"ip": "",
-		"online": "",,
-		"onlinetime": "",,
-		"rtspeeddown": "",,
-		"rtspeedup": "",,
+		"online": "",
+		"onlinetime": "",
+		"rtspeeddown": "",
+		"rtspeedup": "",
 		"rx_bytes": "",
 		"tx_bytes": ""
 	}]
