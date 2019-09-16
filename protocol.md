@@ -770,7 +770,7 @@ json字符串结构
 {
 	"stas": [{
 		"mac": "",
-	  	"band"：2G/5G
+	  	"band" : "5g"/"2.4g",
 		"alias": "",
 		"ip": "",
 		"online": "",
