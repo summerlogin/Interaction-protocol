@@ -531,9 +531,9 @@ json字符串结构
 ### del_blacklist_nod
 ``` json
 {
-    "list" :
+    "macs" :
     [
-        "mac" : "XXX",
+        "XXX",
     ]
 }
 ```
