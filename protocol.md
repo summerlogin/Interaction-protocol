@@ -285,7 +285,7 @@ json字符串结构
 ```
 #### [jump to general_result](#general_result)
 
-### get_lan_info
+### get_lan
 ``` json
 {
     "mac" : "XXX",
