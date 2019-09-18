@@ -42,7 +42,7 @@ json字符串结构
 - [get_mesh_node_info](#get_mesh_node_info)
 - [get_wan_network](#get_wan_network)
 - [set_wifi](#set_wifi)
-- [get_wifi_info](#get_wifi_info)
+- [get_wifi](#get_wifi_info)
 - [set_wifi_power](#set_wifi_power)
 - [set_guest_wifi](#set_guest_wifi)
 - [get_guest_wifi_info](#get_guest_wifi_info)
